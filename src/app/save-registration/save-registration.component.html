@@ -1,0 +1,22 @@
+<p>save-registration works!</p>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+         <label>ID:</label>
+         <input type="text" class="form-control" id="id" [(ngModel)]="registration.id" name="id"/> 
+         </div>
+    <div class="form-group">
+         <label>USERNAME:</label>
+         <input type="text" class="form-control" id="username" [(ngModel)]="registration.username" name="username"/> 
+        </div>
+    <div class="form-group">
+         <label>GMAIL:</label>
+         <input type="text" class="form-control" id="gmail" [(ngModel)]="registration.gmail" name="gmail"/>
+        </div>
+    <div class="form-group">
+          
+         <label>SECTION:</label>
+         <input type="text" class="form-control" id="section" [(ngModel)]="registration.section" name="section"/> 
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+</form>
